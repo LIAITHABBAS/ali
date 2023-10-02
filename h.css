@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+nav{
+    background:silver;
+    height: 75px;
+    width: 100%;
+    transition: 3.5s;
+    position: fixed;
+    z-index: 999;
+   
+
+
+}
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    line-height: 75px;
+    padding: 0 50px;
+}
+ul{
+    float: right;
+    margin-right: 25px;
+}
+li{
+    
+    line-height: 75px;
+
+
+}
+a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border: 1px;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+
+}
+a:hover{
+    color: red;
+  
+}
+.checkbtn{
+    font-size: 30px;
+    font-weight: bold;
+    display: none;
+    float: right;
+    line-height: 75px;
+    transform: 05s;
+    cursor: pointer;
+    color: white;
+}
+#check{
+    display: none;
+}
+@media (max-width:800px){
+    .logo{
+        font-size: 25px;
+        padding-left: 40px;
+
+    }
+a{
+    font-size: 14px;
+    
+}
+}
+@media (max-width:800px){
+    .checkbtn{
+        display: block;
+        
+    }
+    nav{
+        height: 80px;
+    }
+    ul{
+        position: fixed;
+        background: silver;
+       width: 100%;
+        height: 100vh;
+        top:80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: 1;
+        
+       
+    }
+    li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+    a:hover{
+        font-size: 20px;
+        background: none;
+        
+    }
+    #check:checked ~ ul{
+        left: 0;
+      
+    }
+    }
+    nav::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        top: 75px;
+    }
+    .link::before{
+        content: attr(data-text);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width:100%;
+        color: red;
+}
+.l{
+    width: 400px;
+    height: 600px;
+    background: silver;
+    position: relative;
+    bottom: -76px;
+}
+.l::before{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: yellow;
+    position: absolute;
+}
+.s{
+    font-size: 25px;
+    margin-top: 40px;
+}
+.t{
+    font-size: 30px;
+    color: red;
+    position: relative;
+   
+    left: 190px;
+    top: 20px;
+}
+.m{
+    float: right;
+    position: relative;
+    bottom: 530px;
+   
+    width: 930px;
+    background: gray;
+    height: 700px;
+    transition: 4s;
+}
+.h{
+    position: relative;
+    left: 100px;
+    transition: 2.5s;
+}
+h2{
+    line-height: 75px;
+    cursor: pointer;
+}
+.lk{
+    line-height: 75px;
+   font-size: 15px;
+   
+    font-weight: bold;
+    color: black;
+
+}
+.bv{
+    width: 800px;
+    height: 100vh;
+    background-position:center;
+    background: white;
+    margin-top: 80px;
+    transition: 5s;
+
+  
+}
+.v{
+    width: 550px;
+    height:100vh ;
+    background-color: white;
+    transform:  translateY(-630px);
+    position: absolute;
+    right: 0;
+    transition: 3s;
+   
+}
+span{
+    position: absolute;
+    top: -520px;
+    left: -1000px;
+}
+.kp{
+    
+    transform: translateX(-100px);
+    transform:  translateY(-550px);
+    position: absolute;
+    right: 80px;
+    font-size: 50px;
+    color: black;
+    transition: 3s;
+}
+.so{
+    color: blue;
+}
+.so i{
+    color: blue;
+    font-size: 30px;
+    position: relative;
+    right: -90px;
+  background: none;
+}
+.so i:hover{
+    background: none;
+    color: none;
+}
+
+@media (max-width:800px){
+    .v{
+     background: none;
+     position: absolute;
+     top: 400px;
+
+}
+.bv{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 450px;
+}
+.kp{
+    transform:  translateX(-50px);
+    font-size: 20px;
+    transform:  translateY(85px);
+   
+  
+   
+}
+.so{
+    position: relative;
+    left: -80px;
+}
+nav{
+    z-index: 999;
+}
+
+}
+
